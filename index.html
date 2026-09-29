@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution digital</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background: #0d47a1;
+      color: white;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 18px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 65px 20px;
+      text-align: center;
+      background: #1976d2;
+      color: white;
+      border-radius: 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 19px;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 30px;
+    }
+
+    .service {
+      background: white;
+      padding: 25px;
+      margin: 18px 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .service h3 {
+      color: #1976d2;
+    }
+
+    .service strong {
+      display: block;
+      font-size: 22px;
+      color: #0d47a1;
+      margin: 15px 0;
+    }
+
+    button {
+      padding: 13px 22px;
+      border: none;
+      border-radius: 8px;
+      background: #1976d2;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .contact {
+      text-align: center;
+      background: white;
+      padding: 40px 20px;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      header {
+        margin: 20px 10px;
+      }
+
+      header h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Solution digital</div>
+
+    <div class="menu">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="accueil">
+    <h1>Solution digital</h1>
+    <p>Des solutions digitales pour développer votre activité.</p>
+
+    <a href="https://wa.me/224614120983">
+      <button>💬 Nous contacter</button>
+    </a>
+  </header>
+
+  <section id="services">
+    <h2>🚀 Nos services</h2>
+
+    <div class="service">
+      <h3>🌐 Création de sites web</h3>
+      <p>Site moderne adapté aux téléphones.</p>
+    </div>
+
+    <div class="service">
+      <h3>🛒 Boutique en ligne</h3>
+      <p>Création d'une boutique pour vendre vos produits.</p>
+    </div>
+
+    <div class="service">
+      <h3>🎨 Création de logo</h3>
+      <p>Logo professionnel pour votre entreprise.</p>
+    </div>
+
+    <div class="service">
+      <h3>📱 Facebook & TikTok</h3>
+      <p>Création et configuration de comptes professionnels.</p>
+    </div>
+
+    <div class="service">
+      <h3>▶️ Chaîne YouTube</h3>
+      <p>Création et optimisation de votre chaîne.</p>
+    </div>
+
+    <div class="service">
+      <h3>🎬 Création et montage vidéo</h3>
+      <p>Création de contenus pour les réseaux sociaux.</p>
+    </div>
+
+    <div class="service">
+      <h3>📢 Publicité digitale</h3>
+      <p>Vidéos et affiches publicitaires pour votre activité.</p>
+    </div>
+
+    <div class="service">
+      <h3>🎨 Canva & CapCut</h3>
+      <p>Création de contenus et accompagnement sur les outils.</p>
+    </div>
+
+    <div class="service">
+      <h3>💳 Solutions de paiement</h3>
+      <p>Accompagnement pour les solutions disponibles.</p>
+    </div>
+  </section>
+
+  <section id="tarifs">
+    <h2>💰 Nos tarifs</h2>
+
+    <div class="service">
+      <h3>🌐 Site web</h3>
+      <strong>500 000 GNF</strong>
+    </div>
+
+    <div class="service">
+      <h3>🛒 Boutique en ligne</h3>
+      <strong>800 000 GNF</strong>
+    </div>
+
+    <div class="service">
+      <h3>🎨 Logo</h3>
+      <strong>100 000 GNF</strong>
+    </div>
+
+    <div class="service">
+      <h3>📱 Facebook / TikTok</h3>
+      <strong>150 000 GNF</strong>
+    </div>
+
+    <div class="service">
+      <h3>▶️ YouTube</h3>
+      <strong>200 000 GNF</strong>
+    </div>
+
+    <div class="service">
+      <h3>🎬 Vidéo</h3>
+      <strong>100 000 GNF</strong>
+    </div>
+
+    <div class="service">
+      <h3>✂️ Montage vidéo</h3>
+      <strong>75 000 GNF</strong>
+    </div>
+
+    <div class="service">
+      <h3>📢 Vidéo publicitaire</h3>
+      <strong>150 000 GNF</strong>
+    </div>
+
+    <div class="service">
+      <h3>🖼️ Affiche publicitaire</h3>
+      <strong>50 000 GNF</strong>
+    </div>
+
+    <div class="service">
+      <h3>🎨 Canva & CapCut</h3>
+      <strong>Sur devis</strong>
+    </div>
+
+    <div class="service">
+      <h3>💳 Solutions de paiement</h3>
+      <strong>Sur devis</strong>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📞 Contact</h2>
+    <p>Vous avez un projet digital ? Parlons-en.</p>
+
+    <a href="https://wa.me/224614120983">
+      <button>💬 Contacter Solution digital</button>
+    </a>
+  </section>
+
+</body>
+</html>
